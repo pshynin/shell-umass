@@ -10,8 +10,6 @@ $CITY, $STATE"
 # echo "$ADDRESS"
 # echo $ADDRESS
 
-
-
 TESTME="0123456789"
 # shellcheck disable=SC2000
 # echo "$TESTME" | wc -c
@@ -19,5 +17,5 @@ TESTME="0123456789"
 # echo "$TESTME" | sed -e 's/.*\(.\)$/\1/'
 
 P1="Hello   world   I   am   here"
-P1=`echo "$P1" | tr '\t' ' ' | sed -e 's/[ ]//g'`
+P1=`echo "$P1" | tr '\t' ' ' | sed -e 's/[ ]//'`
 echo "$P1"
